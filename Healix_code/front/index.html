@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healix - We Care For You | Healthcare Platform</title>
+    <meta name="description" content="Healix: Your health is our priority. Modern healthcare app for patients & doctors. Sign up, chat, and manage health reports." />
+    <link rel="icon" href="favicon.ico" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script type="module" src="https://unpkg.com/lucide@latest"></script>
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <style>
+      :root {
+        --primary-blue: #1F7AE0;
+        --secondary-blue-gray: #6B7B8C;
+        --light-bg: #F4F7FA;
+        --dark-bg: #2B2F36;
+        --accent-blue: #0B63D6;
+        --healix-radius: 12px;
+        --healix-shadow: 0 2px 12px 0 rgba(31, 122, 224, 0.06);
+        --healix-shadow-hover: 0 8px 32px 0 rgba(31, 122, 224, 0.15);
+        --healix-bg-gradient: linear-gradient(135deg, #1F7AE0 0%, #0B63D6 100%);
+      }
+      [data-theme="dark"] {
+        --tw-bg-opacity: 1;
+        background-color: var(--dark-bg);
+        color: #F4F7FA;
+      }
+      /* Custom scrollbars */
+      ::-webkit-scrollbar {
+        width: 8px;
+        background: #e5e7eb;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 8px;
+      }
+      [data-theme="dark"] ::-webkit-scrollbar {
+        background: #32353c;
+      }
+      [data-theme="dark"] ::-webkit-scrollbar-thumb {
+        background: #525a67;
+      }
+      
+      /* Animations */
+      @keyframes slideUp {
+        from {
+          transform: translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+      
+      .animate-slide-up {
+        animation: slideUp 0.3s ease;
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.6s ease;
+      }
+      
+      /* Smooth scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-[var(--light-bg)] text-[#212529]" id="root-theme">
+    <div id="root"></div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="app.js"></script>
+  </body>
+</html>

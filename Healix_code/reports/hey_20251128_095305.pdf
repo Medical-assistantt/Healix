@@ -1,0 +1,18 @@
+{
+  "patient": {
+    "name": "hey",
+    "age": "19",
+    "gender": "male"
+  },
+  "created_at": "2025-11-28T09:53:05.359863",
+  "entries": [
+    {
+      "timestamp": "2025-11-28T09:53:14.357800",
+      "model_output": "{'symptoms': ['hey'], 'ml_prediction': \"Prediction failed: could not convert string to float: 'hey'\", 'cnn_prediction': None}"
+    },
+    {
+      "timestamp": "2025-11-28T09:55:02.189433",
+      "model_output": "{'symptoms': ['hey'], 'ml_prediction': \"Prediction failed: could not convert string to float: 'hey'\", 'cnn_prediction': None}"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "patient": {
+    "name": "hi",
+    "age": "22",
+    "gender": "maile"
+  },
+  "created_at": "2025-11-28T15:09:31.730499",
+  "entries": []
+}
